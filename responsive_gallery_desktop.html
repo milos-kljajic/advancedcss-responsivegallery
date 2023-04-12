@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<title>Responsive Galerija Desktop</title>
+	<style>
+        body {
+  margin: 0;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+body h1 {
+  margin: 10px 20px;
+  font-weight: 1;
+  font-size: 26px;
+}
+#wrapper {
+  max-width: 1024px;
+  padding: 10px;
+  background-color: white;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 15px;
+}
+@media screen and (min-width: 1024px) {
+  #wrapper {
+    width: 90%;
+  }
+}
+#wrapper #container {
+  padding: 10px;
+  display: grid;
+  grid-gap: 10px 10px;
+}
+@media screen and (max-width: 767px) {
+  #wrapper #container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #wrapper #container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  #wrapper #container {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+#wrapper .p {
+  margin: 10px;
+  text-align: justify;
+}
+.box {
+  width: 80%;
+  background-color: #6ba2d9;
+  border-radius: 8%;
+  overflow: hidden;
+  box-shadow: 0 1px 10px #d1d1d1;
+}
+@media screen and (max-width: 767px) {
+  .box {
+    margin: 10px auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .box {
+    margin: 10px;
+  }
+}
+.box img {
+  padding: 0%;
+  width: 100%;
+}
+.box p {
+  background-color: white;
+  border-top: #303030;
+  margin: 0;
+  font-size: 1em;
+  text-align: center;
+  padding: 5px;
+}
+    </style>
+</head>
+<body>
+	<div id="wrapper">
+		<h1>Gallery Heading</h1>
+
+		<div id="container">
+			<div class="box">
+				<img src="placeholder-image.png" alt="Picture">
+				<p>Image Title</p>
+			</div>
+			<div class="box">
+				<img src="placeholder-image.png" alt="Picture">
+				<p>Image Title</p>
+			</div>
+			<div class="box">
+				<img src="placeholder-image.png" alt="Picture">
+				<p>Image Title</p>
+			</div>
+			<div class="box">
+				<img src="placeholder-image.png" alt="Picture">
+				<p>Image Title</p>
+			</div>
+			<div class="box">
+				<img src="placeholder-image.png" alt="Picture">
+				<p>Image Title</p>
+			</div>
+			<div class="box">
+				<img src="placeholder-image.png" alt="Picture">
+				<p>Image Title</p>
+			</div>
+			<div class="box">
+				<img src="placeholder-image.png" alt="Picture">
+				<p>Image Title</p>
+			</div>
+			<div class="box">
+				<img src="placeholder-image.png" alt="Picture">
+				<p>Image Title</p>
+			</div>
+			<div class="box">
+				<img src="placeholder-image.png" alt="Picture">
+				<p>Image Title</p>
+			</div>
+			<div class="box">
+				<img src="placeholder-image.png" alt="Picture">
+				<p>Image Title</p>
+			</div>
+        </div>
+        
+        <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum neque vitae ultrices fermentum. Nulla facilisi. Etiam eu tristique neque. Fusce sagittis mi sed nisl vehicula, a vehicula dolor semper. Nullam ut ultricies odio. Pellentesque accumsan sagittis egestas. Cras a est vel tellus fermentum vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dolor erat, dictum eget velit id, semper efficitur urna. Etiam molestie id tellus vel laoreet. Fusce a sodales ligula. Integer pharetra ex maximus tortor consequat, quis interdum sem vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet nisl a auctor pharetra. Morbi molestie volutpat odio vitae pretium. Praesent luctus magna lorem, ac gravida leo lacinia quis.
+          Pellentesque venenatis eros mauris, ac varius mauris tincidunt nec. Vestibulum justo nibh, euismod vitae justo quis, tempor faucibus justo. Curabitur congue, diam eu condimentum fringilla, sem erat sodales tellus, sed pretium lorem mi tincidunt lorem. Nulla congue, sem et tristique commodo, massa nunc egestas nunc, eu suscipit ipsum arcu vel sem. Donec vehicula turpis sed porttitor ullamcorper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse dignissim tempus enim a porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer finibus ipsum non molestie fermentum. Quisque vitae suscipit nibh. In condimentum libero vitae fermentum dapibus.
+        </p>
+	</div>
+</body>
+</html>
